@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name VOIP_Phone_Board)(type KiCad)(uri ${KIPRJMOD}/VOIP_Phone_Board.pretty)(options "")(descr ""))
+)
