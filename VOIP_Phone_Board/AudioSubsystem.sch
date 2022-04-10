@@ -22,6 +22,7 @@ F 0 "U1" H 3150 2650 50  0000 C CNN
 F 1 "PCM5102" H 3150 2550 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3100 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 3100 3400 50  0001 C CNN
+F 4 "595-PCM5102APW" H 3150 2650 50  0001 C CNN "Mouser Part Number"
 	1    3150 2650
 	1    0    0    -1  
 $EndComp
@@ -96,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 2450 1850 2450
 Wire Wire Line
-	2150 2550 1850 2550
+	2150 2550 1950 2550
 Wire Wire Line
 	2650 3050 2400 3050
 Wire Wire Line
@@ -477,18 +478,95 @@ Wire Wire Line
 $Comp
 L 69253-002LF:69253-002LF J1
 U 1 1 6256F547
-P 9650 2700
-F 0 "J1" H 10050 2965 50  0000 C CNN
-F 1 "69253-002LF" H 10050 2874 50  0000 C CNN
-F 2 "VOIP_Phone_Board:69253002LF" H 10300 2800 50  0001 L CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/69253.pdf" H 10300 2700 50  0001 L CNN
-F 4 "Modular Connectors / Ethernet Connectors 4POS/1PORT CAT 3 VERTICAL" H 10300 2600 50  0001 L CNN "Description"
-F 5 "15.77" H 10300 2500 50  0001 L CNN "Height"
-F 6 "649-69253-002LF" H 10300 2400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/69253-002LF?qs=6FviONYszHchXJMjMf3GPg%3D%3D" H 10300 2300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Amphenol" H 10300 2200 50  0001 L CNN "Manufacturer_Name"
-F 9 "69253-002LF" H 10300 2100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9650 2700
+P 8600 2350
+F 0 "J1" H 9000 2615 50  0000 C CNN
+F 1 "69253-002LF" H 9000 2524 50  0000 C CNN
+F 2 "VOIP_Phone_Board:69253002LF" H 9250 2450 50  0001 L CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/69253.pdf" H 9250 2350 50  0001 L CNN
+F 4 "Modular Connectors / Ethernet Connectors 4POS/1PORT CAT 3 VERTICAL" H 9250 2250 50  0001 L CNN "Description"
+F 5 "15.77" H 9250 2150 50  0001 L CNN "Height"
+F 6 "649-69253-002LF" H 9250 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/69253-002LF?qs=6FviONYszHchXJMjMf3GPg%3D%3D" H 9250 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amphenol" H 9250 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "69253-002LF" H 9250 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8600 2350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Oscillator:SG-8002DC X?
+U 1 1 6258A801
+P 3250 4500
+F 0 "X?" H 2906 4546 50  0000 R CNN
+F 1 "SG-8002DC" H 2906 4455 50  0000 R CNN
+F 2 "Oscillator:Oscillator_SeikoEpson_SG-8002DC" H 3700 4150 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC" H 3150 4500 50  0001 C CNN
+F 4 "732-SG-8002DC6.144R" H 3250 4500 50  0001 C CNN "Mouser Part Number"
+	1    3250 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4500 1950 4500
+Wire Wire Line
+	1950 4500 1950 2550
+Connection ~ 1950 2550
+Wire Wire Line
+	1950 2550 1850 2550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6258D174
+P 3250 4100
+F 0 "#PWR?" H 3250 3950 50  0001 C CNN
+F 1 "+3.3V" H 3265 4273 50  0000 C CNN
+F 2 "" H 3250 4100 50  0001 C CNN
+F 3 "" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6258D7D4
+P 3250 5000
+F 0 "#PWR?" H 3250 4750 50  0001 C CNN
+F 1 "GND" H 3255 4827 50  0000 C CNN
+F 2 "" H 3250 5000 50  0001 C CNN
+F 3 "" H 3250 5000 50  0001 C CNN
+	1    3250 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 4500
+Wire Wire Line
+	3250 4100 3250 4200
+Wire Wire Line
+	3250 4800 3250 5000
+$Comp
+L PCM1808PW:PCM1808PW U?
+U 1 1 62597D3A
+P 2750 5750
+F 0 "U?" H 3300 6015 50  0000 C CNN
+F 1 "PCM1808PW" H 3300 5924 50  0000 C CNN
+F 2 "VOIP_Phone_Board:SOP65P640X120-14N" H 3700 5850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/pcm1808" H 3700 5750 50  0001 L CNN
+F 4 "99dB SNR Stereo ADC With Single-Ended Inputs" H 3700 5650 50  0001 L CNN "Description"
+F 5 "1.2" H 3700 5550 50  0001 L CNN "Height"
+F 6 "595-PCM1808PW" H 3700 5450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1808PW?qs=iSMark9AYDWYQaMpH%2FhwPg%3D%3D" H 3700 5350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3700 5250 50  0001 L CNN "Manufacturer_Name"
+F 9 "PCM1808PW" H 3700 5150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2750 5750
+	1    0    0    -1  
+$EndComp
+Text Label 4800 2250 0    50   ~ 0
+Leftout
+Text Label 4350 2350 0    50   ~ 0
+RightOut
+Text Label 2050 2250 2    50   ~ 0
+DAP4_FS
+Text Label 8600 2350 2    50   ~ 0
+MIC_A(Black)
+Text Label 8600 2450 2    50   ~ 0
+SPKR_B(Green)
+Text Label 9400 2350 0    50   ~ 0
+SPKR_A(Red)
+Text Label 9400 2450 0    50   ~ 0
+MIC_B(Yellow)
 $EndSCHEMATC

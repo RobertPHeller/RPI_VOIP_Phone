@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name VOIP_Phone_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/VOIP_Phone_Board-rescue.lib)(options "")(descr ""))
   (lib (name 69253-002LF)(type Legacy)(uri ${KIPRJMOD}/69253-002LF.lib)(options "")(descr ""))
+  (lib (name PCM1808PW)(type Legacy)(uri ${KIPRJMOD}/PCM1808PW.lib)(options "")(descr ""))
 )
