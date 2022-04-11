@@ -301,6 +301,14 @@ S 2050 4200 2250 2050
 U 625360C2
 F0 "Keypad" 50
 F1 "Keypad.sch" 50
+F2 "Column4" I L 2050 4400 50 
+F3 "Column3" I L 2050 4500 50 
+F4 "Column2" I L 2050 4600 50 
+F5 "Column1" I L 2050 4700 50 
+F6 "Row4" O L 2050 4850 50 
+F7 "Row3" O L 2050 4950 50 
+F8 "Row2" O L 2050 5050 50 
+F9 "Row1" O L 2050 5150 50 
 $EndSheet
 $Sheet
 S 5500 4250 2550 2100
@@ -318,4 +326,20 @@ Text Label 6600 2300 2    50   ~ 0
 Audio_MCLK
 Text Label 6600 2550 2    50   ~ 0
 DAP4_DIN
+Text Label 2050 4400 2    50   ~ 0
+GPIO5
+Text Label 2050 4500 2    50   ~ 0
+GPIO6
+Text Label 2050 4600 2    50   ~ 0
+GPIO16
+Text Label 2050 4700 2    50   ~ 0
+GPIO17(GEN0)
+Text Label 2050 4850 2    50   ~ 0
+GPIO22(GEN3)
+Text Label 2050 4950 2    50   ~ 0
+GPIO23(GEN4)
+Text Label 2050 5050 2    50   ~ 0
+GPIO24(GEN5)
+Text Label 2050 5150 2    50   ~ 0
+GPIO25(GEN6)
 $EndSCHEMATC
