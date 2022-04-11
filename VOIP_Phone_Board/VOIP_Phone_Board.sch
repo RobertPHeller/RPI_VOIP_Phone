@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 2
 Title ""
 Date "15 nov 2012"
 Rev ""
@@ -161,12 +161,6 @@ Text Label 1250 1700 0    50   ~ 0
 GPIO27(GEN2)
 Text Label 1250 1800 0    50   ~ 0
 GPIO22(GEN3)
-Text Label 1250 2000 0    50   ~ 0
-GPIO10(SPI0_MOSI)
-Text Label 1250 2100 0    50   ~ 0
-GPIO9(SPI0_MISO)
-Text Label 1250 2200 0    50   ~ 0
-GPIO11(SPI0_SCK)
 Text Label 1250 2400 0    50   ~ 0
 ID_SD
 Text Label 1250 2500 0    50   ~ 0
@@ -191,8 +185,6 @@ Text Label 3950 2300 2    50   ~ 0
 GPIO7(SPI1_CE_N)
 Text Label 3950 2200 2    50   ~ 0
 GPIO8(SPI0_CE_N)
-Text Label 3950 2100 2    50   ~ 0
-GPIO25(GEN6)
 Text Label 3950 1900 2    50   ~ 0
 GPIO24(GEN5)
 Text Label 3950 1800 2    50   ~ 0
@@ -296,27 +288,6 @@ F4 "DAP4_SCLK" I L 6600 2150 50
 F5 "AUDIO_MCLK" O L 6600 2300 50 
 F6 "DAP4_DOUT" O L 6600 2550 50 
 $EndSheet
-$Sheet
-S 2050 4200 2250 2050
-U 625360C2
-F0 "Keypad" 50
-F1 "Keypad.sch" 50
-F2 "Column4" I L 2050 4400 50 
-F3 "Column3" I L 2050 4500 50 
-F4 "Column2" I L 2050 4600 50 
-F5 "Column1" I L 2050 4700 50 
-F6 "Row4" O L 2050 4850 50 
-F7 "Row3" O L 2050 4950 50 
-F8 "Row2" O L 2050 5050 50 
-F9 "Row1" O L 2050 5150 50 
-F10 "Hook" O L 2050 5550 50 
-$EndSheet
-$Sheet
-S 5500 4250 2550 2100
-U 625362F1
-F0 "Display" 50
-F1 "Display.sch" 50
-$EndSheet
 Text Label 6600 1850 2    50   ~ 0
 DAP4_FS
 Text Label 6600 2000 2    50   ~ 0
@@ -327,22 +298,309 @@ Text Label 6600 2300 2    50   ~ 0
 Audio_MCLK
 Text Label 6600 2550 2    50   ~ 0
 DAP4_DIN
-Text Label 2050 4400 2    50   ~ 0
+Text Label 2600 4400 2    50   ~ 0
 GPIO5
-Text Label 2050 4500 2    50   ~ 0
+Text Label 2600 4500 2    50   ~ 0
 GPIO6
-Text Label 2050 4600 2    50   ~ 0
+Text Label 2600 4600 2    50   ~ 0
 GPIO16
-Text Label 2050 4700 2    50   ~ 0
+Text Label 2600 4700 2    50   ~ 0
 GPIO17(GEN0)
-Text Label 2050 4850 2    50   ~ 0
+Text Label 2600 4800 2    50   ~ 0
 GPIO22(GEN3)
-Text Label 2050 4950 2    50   ~ 0
+Text Label 2600 4900 2    50   ~ 0
 GPIO23(GEN4)
-Text Label 2050 5050 2    50   ~ 0
+Text Label 2600 5000 2    50   ~ 0
 GPIO24(GEN5)
-Text Label 2050 5150 2    50   ~ 0
+Text Label 2600 5100 2    50   ~ 0
 GPIO25(GEN6)
-Text Label 2050 5550 2    50   ~ 0
+Text Label 3800 5500 2    50   ~ 0
 GPIO27(GEN2)
+Wire Wire Line
+	2750 4400 2600 4400
+Wire Wire Line
+	2750 4500 2600 4500
+Wire Wire Line
+	2750 4600 2600 4600
+Wire Wire Line
+	2750 4700 2600 4700
+Wire Wire Line
+	2750 4800 2600 4800
+Wire Wire Line
+	2750 4900 2600 4900
+Wire Wire Line
+	2750 5000 2600 5000
+Wire Wire Line
+	2750 5100 2600 5100
+$Comp
+L Keypad:KeypadConnector J?
+U 1 1 625F62B4
+P 2950 4700
+AR Path="/625360C2/625F62B4" Ref="J?"  Part="1" 
+AR Path="/625F62B4" Ref="J3"  Part="1" 
+F 0 "J3" H 2922 4674 50  0000 R CNN
+F 1 "KeypadConnector" H 2922 4583 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2950 4700 50  0001 C CNN
+F 3 "~" H 2950 4700 50  0001 C CNN
+	1    2950 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 625F62BA
+P 4400 5800
+AR Path="/625360C2/625F62BA" Ref="#PWR?"  Part="1" 
+AR Path="/625F62BA" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 4400 5550 50  0001 C CNN
+F 1 "GND" H 4405 5627 50  0000 C CNN
+F 2 "" H 4400 5800 50  0001 C CNN
+F 3 "" H 4400 5800 50  0001 C CNN
+	1    4400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 625F62C1
+P 4000 5150
+AR Path="/625360C2/625F62C1" Ref="R?"  Part="1" 
+AR Path="/625F62C1" Ref="R14"  Part="1" 
+F 0 "R14" H 4070 5196 50  0000 L CNN
+F 1 "10K" H 4070 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3930 5150 50  0001 C CNN
+F 3 "~" H 4000 5150 50  0001 C CNN
+F 4 "603-AC0603DR-0710KL" H 4000 5150 50  0001 C CNN "Mouser Part Number"
+	1    4000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 625F62C7
+P 4000 4850
+AR Path="/625360C2/625F62C7" Ref="#PWR?"  Part="1" 
+AR Path="/625F62C7" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 4000 4700 50  0001 C CNN
+F 1 "+3.3V" H 4015 5023 50  0000 C CNN
+F 2 "" H 4000 4850 50  0001 C CNN
+F 3 "" H 4000 4850 50  0001 C CNN
+	1    4000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4850 4000 5000
+Wire Wire Line
+	4000 5300 4000 5500
+Wire Wire Line
+	4400 5500 4400 5800
+Wire Wire Line
+	3800 5500 4000 5500
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 625F62D2
+P 4150 5700
+AR Path="/625360C2/625F62D2" Ref="J?"  Part="1" 
+AR Path="/625F62D2" Ref="J4"  Part="1" 
+F 0 "J4" V 4304 5512 50  0000 R CNN
+F 1 "Hook" V 4213 5512 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 5700 50  0001 C CNN
+F 3 "~" H 4150 5700 50  0001 C CNN
+	1    4150 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 5500 4400 5500
+Wire Wire Line
+	4150 5500 4000 5500
+Connection ~ 4000 5500
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 626081D7
+P 1250 4250
+F 0 "J2" H 1358 4631 50  0000 C CNN
+F 1 "Display" H 1358 4540 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1250 4250 50  0001 C CNN
+F 3 "~" H 1250 4250 50  0001 C CNN
+	1    1250 4250
+	1    0    0    -1  
+$EndComp
+Text Label 1450 4050 0    50   ~ 0
+GPIO2(SDA1)
+Text Label 1450 4150 0    50   ~ 0
+GPIO3(SCL1)
+Text Label 1450 4250 0    50   ~ 0
+GPIO26
+$Comp
+L power:GND #PWR023
+U 1 1 62612C53
+P 1600 4350
+F 0 "#PWR023" H 1600 4100 50  0001 C CNN
+F 1 "GND" V 1605 4222 50  0000 R CNN
+F 2 "" H 1600 4350 50  0001 C CNN
+F 3 "" H 1600 4350 50  0001 C CNN
+	1    1600 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR024
+U 1 1 626130C9
+P 1600 4450
+F 0 "#PWR024" H 1600 4300 50  0001 C CNN
+F 1 "+3.3V" V 1615 4578 50  0000 L CNN
+F 2 "" H 1600 4450 50  0001 C CNN
+F 3 "" H 1600 4450 50  0001 C CNN
+	1    1600 4450
+	0    1    1    0   
+$EndComp
+NoConn ~ 1450 4550
+Wire Wire Line
+	1600 4450 1450 4450
+Wire Wire Line
+	1600 4350 1450 4350
+$Comp
+L Connector:Conn_01x05_Male J7
+U 1 1 6256CE28
+P 6300 5050
+F 0 "J7" H 6272 5074 50  0000 R CNN
+F 1 "Control Buttons" H 6272 4983 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6300 5050 50  0001 C CNN
+F 3 "~" H 6300 5050 50  0001 C CNN
+	1    6300 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6256D9EE
+P 5950 4600
+AR Path="/625360C2/6256D9EE" Ref="R?"  Part="1" 
+AR Path="/6256D9EE" Ref="R18"  Part="1" 
+F 0 "R18" H 6020 4646 50  0000 L CNN
+F 1 "10K" H 6020 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 4600 50  0001 C CNN
+F 3 "~" H 5950 4600 50  0001 C CNN
+F 4 "603-AC0603DR-0710KL" H 5950 4600 50  0001 C CNN "Mouser Part Number"
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6256F9AA
+P 5800 4600
+AR Path="/625360C2/6256F9AA" Ref="R?"  Part="1" 
+AR Path="/6256F9AA" Ref="R17"  Part="1" 
+F 0 "R17" H 5870 4646 50  0000 L CNN
+F 1 "10K" H 5870 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5730 4600 50  0001 C CNN
+F 3 "~" H 5800 4600 50  0001 C CNN
+F 4 "603-AC0603DR-0710KL" H 5800 4600 50  0001 C CNN "Mouser Part Number"
+	1    5800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6256FB2D
+P 5650 4600
+AR Path="/625360C2/6256FB2D" Ref="R?"  Part="1" 
+AR Path="/6256FB2D" Ref="R16"  Part="1" 
+F 0 "R16" H 5720 4646 50  0000 L CNN
+F 1 "10K" H 5720 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5580 4600 50  0001 C CNN
+F 3 "~" H 5650 4600 50  0001 C CNN
+F 4 "603-AC0603DR-0710KL" H 5650 4600 50  0001 C CNN "Mouser Part Number"
+	1    5650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6256FD5C
+P 5500 4600
+AR Path="/625360C2/6256FD5C" Ref="R?"  Part="1" 
+AR Path="/6256FD5C" Ref="R15"  Part="1" 
+F 0 "R15" H 5570 4646 50  0000 L CNN
+F 1 "10K" H 5570 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5430 4600 50  0001 C CNN
+F 3 "~" H 5500 4600 50  0001 C CNN
+F 4 "603-AC0603DR-0710KL" H 5500 4600 50  0001 C CNN "Mouser Part Number"
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 625708C9
+P 5950 5350
+F 0 "#PWR028" H 5950 5100 50  0001 C CNN
+F 1 "GND" H 5955 5177 50  0000 C CNN
+F 2 "" H 5950 5350 50  0001 C CNN
+F 3 "" H 5950 5350 50  0001 C CNN
+	1    5950 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4750 5950 4850
+Wire Wire Line
+	5950 4850 6100 4850
+Wire Wire Line
+	5800 4750 5800 4950
+Wire Wire Line
+	5800 4950 6100 4950
+Wire Wire Line
+	5650 4750 5650 5050
+Wire Wire Line
+	5650 5050 6100 5050
+Wire Wire Line
+	5500 4750 5500 5150
+Wire Wire Line
+	5500 5150 6100 5150
+Wire Wire Line
+	5950 5350 5950 5250
+Wire Wire Line
+	5950 5250 6100 5250
+Wire Wire Line
+	5450 4850 5950 4850
+Connection ~ 5950 4850
+Wire Wire Line
+	5450 4950 5800 4950
+Connection ~ 5800 4950
+Wire Wire Line
+	5450 5050 5650 5050
+Connection ~ 5650 5050
+Wire Wire Line
+	5450 5150 5500 5150
+Connection ~ 5500 5150
+Text Label 3950 2100 2    50   ~ 0
+GPIO25(GEN6)
+Text Label 1250 2200 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 1250 2100 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 1250 2000 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 5450 4850 2    50   ~ 0
+GPIO10(SPI0_MOSI)
+$Comp
+L power:+3.3V #PWR027
+U 1 1 625921A9
+P 5950 4200
+F 0 "#PWR027" H 5950 4050 50  0001 C CNN
+F 1 "+3.3V" H 5965 4373 50  0000 C CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4450 5950 4200
+Wire Wire Line
+	5500 4450 5650 4450
+Wire Wire Line
+	5800 4450 5650 4450
+Connection ~ 5650 4450
+Wire Wire Line
+	5800 4450 5950 4450
+Connection ~ 5800 4450
+Connection ~ 5950 4450
+Text Label 5450 4950 2    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 5450 5050 2    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 5450 5150 2    50   ~ 0
+GPIO8(SPI0_CE_N)
 $EndSCHEMATC

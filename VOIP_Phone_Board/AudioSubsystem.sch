@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -476,23 +476,6 @@ Connection ~ 2400 2850
 Wire Wire Line
 	2400 2850 2400 2750
 $Comp
-L 69253-002LF:69253-002LF J1
-U 1 1 6256F547
-P 8600 2350
-F 0 "J1" H 9000 2615 50  0000 C CNN
-F 1 "69253-002LF" H 9000 2524 50  0000 C CNN
-F 2 "VOIP_Phone_Board:69253002LF" H 9250 2450 50  0001 L CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/69253.pdf" H 9250 2350 50  0001 L CNN
-F 4 "Modular Connectors / Ethernet Connectors 4POS/1PORT CAT 3 VERTICAL" H 9250 2250 50  0001 L CNN "Description"
-F 5 "15.77" H 9250 2150 50  0001 L CNN "Height"
-F 6 "649-69253-002LF" H 9250 2050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/69253-002LF?qs=6FviONYszHchXJMjMf3GPg%3D%3D" H 9250 1950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Amphenol" H 9250 1850 50  0001 L CNN "Manufacturer_Name"
-F 9 "69253-002LF" H 9250 1750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8600 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Oscillator:SG-8002DC X1
 U 1 1 6258A801
 P 3250 4500
@@ -561,13 +544,13 @@ Text Label 4350 2350 0    50   ~ 0
 RightOut
 Text Label 2050 2250 2    50   ~ 0
 DAP4_FS
-Text Label 8600 2350 2    50   ~ 0
+Text Label 9150 2200 0    50   ~ 0
 MIC_A(Black)
-Text Label 8600 2450 2    50   ~ 0
+Text Label 9150 2400 0    50   ~ 0
 SPKR_B(Green)
-Text Label 9400 2350 0    50   ~ 0
+Text Label 9150 2300 0    50   ~ 0
 SPKR_A(Red)
-Text Label 9400 2450 0    50   ~ 0
+Text Label 9150 2500 0    50   ~ 0
 MIC_B(Yellow)
 $Comp
 L Device:CP1 C15
@@ -943,4 +926,45 @@ Text Label 5650 5900 0    50   ~ 0
 MIC_Left
 Text Label 5650 5650 0    50   ~ 0
 MIC_Right
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 6261E09C
+P 8950 2300
+F 0 "J1" H 9058 2581 50  0000 C CNN
+F 1 "Headset" H 9058 2490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8950 2300 50  0001 C CNN
+F 3 "~" H 8950 2300 50  0001 C CNN
+	1    8950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 6254E63A
+P 9150 3300
+F 0 "J5" H 9258 3481 50  0000 C CNN
+F 1 "Speaker" H 9258 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9150 3300 50  0001 C CNN
+F 3 "~" H 9150 3300 50  0001 C CNN
+	1    9150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 6254EECA
+P 9150 3800
+F 0 "J6" H 9258 3981 50  0000 C CNN
+F 1 "Microphone" H 9258 3890 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9150 3800 50  0001 C CNN
+F 3 "~" H 9150 3800 50  0001 C CNN
+	1    9150 3800
+	1    0    0    -1  
+$EndComp
+Text Label 9350 3300 0    50   ~ 0
+SpeakerA
+Text Label 9350 3400 0    50   ~ 0
+SpeakerB
+Text Label 9350 3800 0    50   ~ 0
+MicrophoneA
+Text Label 9350 3900 0    50   ~ 0
+MicrophoneB
 $EndSCHEMATC
