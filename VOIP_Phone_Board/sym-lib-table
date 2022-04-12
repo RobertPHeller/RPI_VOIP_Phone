@@ -3,4 +3,5 @@
   (lib (name 69253-002LF)(type Legacy)(uri ${KIPRJMOD}/69253-002LF.lib)(options "")(descr ""))
   (lib (name PCM1808PW)(type Legacy)(uri ${KIPRJMOD}/PCM1808PW.lib)(options "")(descr ""))
   (lib (name Keypad)(type Legacy)(uri ${KIPRJMOD}/Keypad.lib)(options "")(descr ""))
+  (lib (name MAX98357AETE+T)(type Legacy)(uri ${KIPRJMOD}/MAX98357AETE+T.lib)(options "")(descr ""))
 )
