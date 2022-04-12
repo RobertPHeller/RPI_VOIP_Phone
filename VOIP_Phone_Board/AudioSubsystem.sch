@@ -97,8 +97,6 @@ F 4 "732-SG-8002DC6.144R" H 3250 4500 50  0001 C CNN "Mouser Part Number"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 4500 2600 4500
-Wire Wire Line
 	1200 2400 1100 2400
 $Comp
 L power:+3.3V #PWR018
@@ -127,24 +125,7 @@ Wire Wire Line
 	3250 4100 3250 4200
 Wire Wire Line
 	3250 4800 3250 5000
-$Comp
-L PCM1808PW:PCM1808PW U2
-U 1 1 62597D3A
-P 2750 5750
-F 0 "U2" H 3300 6015 50  0000 C CNN
-F 1 "PCM1808PW" H 3300 5924 50  0000 C CNN
-F 2 "VOIP_Phone_Board:SOP65P640X120-14N" H 3700 5850 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/pcm1808" H 3700 5750 50  0001 L CNN
-F 4 "99dB SNR Stereo ADC With Single-Ended Inputs" H 3700 5650 50  0001 L CNN "Description"
-F 5 "1.2" H 3700 5550 50  0001 L CNN "Height"
-F 6 "595-PCM1808PW" H 3700 5450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1808PW?qs=iSMark9AYDWYQaMpH%2FhwPg%3D%3D" H 3700 5350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3700 5250 50  0001 L CNN "Manufacturer_Name"
-F 9 "PCM1808PW" H 3700 5150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2750 5750
-	1    0    0    -1  
-$EndComp
-Text Label 1100 2100 2    50   ~ 0
+Text Label 1100 2100 0    50   ~ 0
 DAP4_FS
 Text Label 7000 2950 0    50   ~ 0
 MIC_A(Black)
@@ -154,378 +135,10 @@ Text Label 7000 3050 0    50   ~ 0
 SPKR_A(Red)
 Text Label 7000 3250 0    50   ~ 0
 MIC_B(Yellow)
-$Comp
-L Device:CP1 C15
-U 1 1 62546F6C
-P 1950 5750
-F 0 "C15" H 2065 5796 50  0000 L CNN
-F 1 "10uf" H 2065 5705 50  0000 L CNN
-F 2 "VOIP_Phone_Board:CP_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1950 5750 50  0001 C CNN
-F 3 "~" H 1950 5750 50  0001 C CNN
-F 4 "647-F981A106MMA" H 1950 5750 50  0001 C CNN "Mouser Part Number"
-	1    1950 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C18
-U 1 1 62548A72
-P 2250 6200
-F 0 "C18" H 2365 6246 50  0000 L CNN
-F 1 "10uf" H 2365 6155 50  0000 L CNN
-F 2 "VOIP_Phone_Board:CP_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 6200 50  0001 C CNN
-F 3 "~" H 2250 6200 50  0001 C CNN
-F 4 "647-F981A106MMA" H 2250 6200 50  0001 C CNN "Mouser Part Number"
-	1    2250 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 6254C109
-P 2200 5750
-F 0 "C17" H 2315 5796 50  0000 L CNN
-F 1 ".1uf" H 2315 5705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2238 5600 50  0001 C CNN
-F 3 "~" H 2200 5750 50  0001 C CNN
-F 4 "80-C603C104K5RAC3121" H 2200 5750 50  0001 C CNN "Mouser Part Number"
-	1    2200 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 6254D09C
-P 1950 6200
-F 0 "C16" H 2065 6246 50  0000 L CNN
-F 1 ".1uf" H 2065 6155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1988 6050 50  0001 C CNN
-F 3 "~" H 1950 6200 50  0001 C CNN
-F 4 "80-C603C104K5RAC3121" H 1950 6200 50  0001 C CNN "Mouser Part Number"
-	1    1950 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 5750 2750 5600
-Wire Wire Line
-	2750 5600 2200 5600
-Wire Wire Line
-	2200 5600 1950 5600
-Connection ~ 2200 5600
-Wire Wire Line
-	2550 5850 2550 5900
-Wire Wire Line
-	2550 5900 2200 5900
-Wire Wire Line
-	2550 5850 2750 5850
-Wire Wire Line
-	1950 5900 2200 5900
-Connection ~ 2200 5900
-Wire Wire Line
-	2750 6050 2250 6050
-Wire Wire Line
-	2250 6050 1950 6050
-Connection ~ 2250 6050
-Wire Wire Line
-	2750 6150 2500 6150
-Wire Wire Line
-	2500 6150 2500 6350
-Wire Wire Line
-	2500 6350 2250 6350
-Wire Wire Line
-	1950 6350 2250 6350
-Connection ~ 2250 6350
-$Comp
-L power:GND #PWR017
-U 1 1 6255B804
-P 2250 6550
-F 0 "#PWR017" H 2250 6300 50  0001 C CNN
-F 1 "GND" H 2255 6377 50  0000 C CNN
-F 2 "" H 2250 6550 50  0001 C CNN
-F 3 "" H 2250 6550 50  0001 C CNN
-	1    2250 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6550 2250 6350
-Wire Wire Line
-	2250 6550 1650 6550
-Wire Wire Line
-	1650 5900 1950 5900
-Wire Wire Line
-	1650 5900 1650 6300
-Connection ~ 2250 6550
-Connection ~ 1950 5900
-$Comp
-L power:+3.3V #PWR016
-U 1 1 6255F394
-P 1850 6050
-F 0 "#PWR016" H 1850 5900 50  0001 C CNN
-F 1 "+3.3V" V 1865 6178 50  0000 L CNN
-F 2 "" H 1850 6050 50  0001 C CNN
-F 3 "" H 1850 6050 50  0001 C CNN
-	1    1850 6050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1850 6050 1950 6050
-Connection ~ 1950 6050
-$Comp
-L Device:C C13
-U 1 1 625613BB
-P 1100 6150
-F 0 "C13" H 1215 6196 50  0000 L CNN
-F 1 ".1uf" H 1215 6105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1138 6000 50  0001 C CNN
-F 3 "~" H 1100 6150 50  0001 C CNN
-F 4 "80-C603C104K5RAC3121" H 1100 6150 50  0001 C CNN "Mouser Part Number"
-	1    1100 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C14
-U 1 1 625617EC
-P 1300 6150
-F 0 "C14" H 1415 6196 50  0000 L CNN
-F 1 "47uf" H 1415 6105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1300 6150 50  0001 C CNN
-F 3 "~" H 1300 6150 50  0001 C CNN
-F 4 "140-REA470M1HBK0611P" H 1300 6150 50  0001 C CNN "Mouser Part Number"
-	1    1300 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 5950 1300 5950
-Wire Wire Line
-	1300 5950 1300 6000
-Wire Wire Line
-	1100 6000 1300 6000
-Connection ~ 1300 6000
-Wire Wire Line
-	1100 6300 1300 6300
-Wire Wire Line
-	1300 6300 1650 6300
-Connection ~ 1300 6300
-Connection ~ 1650 6300
-Wire Wire Line
-	1650 6300 1650 6550
-$Comp
-L power:+5V #PWR015
-U 1 1 6256B901
-P 1300 5750
-F 0 "#PWR015" H 1300 5600 50  0001 C CNN
-F 1 "+5V" H 1315 5923 50  0000 C CNN
-F 2 "" H 1300 5750 50  0001 C CNN
-F 3 "" H 1300 5750 50  0001 C CNN
-	1    1300 5750
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 5950
-Wire Wire Line
-	1300 5950 1300 5750
-Wire Wire Line
-	2750 6250 2600 6250
-Wire Wire Line
-	2600 6250 2600 4500
-Connection ~ 2600 4500
-$Comp
-L Device:R R7
-U 1 1 6257890D
-P 2450 6950
-F 0 "R7" V 2243 6950 50  0000 C CNN
-F 1 "51" V 2334 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 6950 50  0001 C CNN
-F 3 "~" H 2450 6950 50  0001 C CNN
-F 4 "667-ERJ-PA3J510V" V 2450 6950 50  0001 C CNN "Mouser Part Number"
-	1    2450 6950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2750 6350 2750 6950
-Wire Wire Line
-	2750 6950 2600 6950
-Wire Wire Line
-	2000 6950 2300 6950
-Text Label 2000 6950 2    50   ~ 0
-DAP4_FS
-$Comp
-L Device:R R9
-U 1 1 62588E5E
-P 4250 6350
-F 0 "R9" V 4043 6350 50  0000 C CNN
-F 1 "51" V 4134 6350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4180 6350 50  0001 C CNN
-F 3 "~" H 4250 6350 50  0001 C CNN
-F 4 "667-ERJ-PA3J510V" V 4250 6350 50  0001 C CNN "Mouser Part Number"
-	1    4250 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 62589389
-P 4250 6250
-F 0 "R8" V 4043 6250 50  0000 C CNN
-F 1 "51" V 4134 6250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4180 6250 50  0001 C CNN
-F 3 "~" H 4250 6250 50  0001 C CNN
-F 4 "667-ERJ-PA3J510V" V 4250 6250 50  0001 C CNN "Mouser Part Number"
-	1    4250 6250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 6350 4100 6350
-Wire Wire Line
-	3850 6250 4100 6250
-Text Label 1100 2300 2    50   ~ 0
+Text Label 1100 2300 0    50   ~ 0
 DAP4_SCLK
-Text Label 4400 6350 0    50   ~ 0
-DAP4_SCLK
-Text HLabel 4400 6250 2    50   Output ~ 0
+Text HLabel 1100 2550 0    50   Output ~ 0
 DAP4_DOUT
-Wire Wire Line
-	3850 6150 3850 6050
-$Comp
-L power:+3.3V #PWR021
-U 1 1 62597AD1
-P 4100 6050
-F 0 "#PWR021" H 4100 5900 50  0001 C CNN
-F 1 "+3.3V" H 4115 6223 50  0000 C CNN
-F 2 "" H 4100 6050 50  0001 C CNN
-F 3 "" H 4100 6050 50  0001 C CNN
-	1    4100 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 6050 3850 6050
-Connection ~ 3850 6050
-$Comp
-L power:GND #PWR020
-U 1 1 6259AD0D
-P 3950 5950
-F 0 "#PWR020" H 3950 5700 50  0001 C CNN
-F 1 "GND" V 3955 5822 50  0000 R CNN
-F 2 "" H 3950 5950 50  0001 C CNN
-F 3 "" H 3950 5950 50  0001 C CNN
-	1    3950 5950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 5950 3850 5950
-$Comp
-L Device:CP1 C19
-U 1 1 6259E082
-P 4550 5650
-F 0 "C19" V 4802 5650 50  0000 C CNN
-F 1 "4.7uf" V 4711 5650 50  0000 C CNN
-F 2 "VOIP_Phone_Board:CP_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 5650 50  0001 C CNN
-F 3 "~" H 4550 5650 50  0001 C CNN
-F 4 "647-F981A475MMA " V 4550 5650 50  0001 C CNN "Mouser Part Number"
-	1    4550 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1 C20
-U 1 1 6259E5C3
-P 4550 5900
-F 0 "C20" V 4802 5900 50  0000 C CNN
-F 1 "4.7uf" V 4711 5900 50  0000 C CNN
-F 2 "VOIP_Phone_Board:CP_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 5900 50  0001 C CNN
-F 3 "~" H 4550 5900 50  0001 C CNN
-F 4 "647-F981A475MMA " V 4550 5900 50  0001 C CNN "Mouser Part Number"
-	1    4550 5900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3850 5750 4000 5750
-Wire Wire Line
-	4000 5750 4000 5650
-Wire Wire Line
-	4000 5650 4400 5650
-Wire Wire Line
-	3850 5850 4250 5850
-Wire Wire Line
-	4250 5850 4250 5900
-Wire Wire Line
-	4250 5900 4400 5900
-$Comp
-L Device:R R12
-U 1 1 625A4CA4
-P 5500 5650
-F 0 "R12" V 5293 5650 50  0000 C CNN
-F 1 "10K" V 5384 5650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5430 5650 50  0001 C CNN
-F 3 "~" H 5500 5650 50  0001 C CNN
-F 4 "603-AC0603DR-0710KL" V 5500 5650 50  0001 C CNN "Mouser Part Number"
-	1    5500 5650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 625A5229
-P 5500 5900
-F 0 "R13" V 5293 5900 50  0000 C CNN
-F 1 "10K" V 5384 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5430 5900 50  0001 C CNN
-F 3 "~" H 5500 5900 50  0001 C CNN
-F 4 "603-AC0603DR-0710KL" V 5500 5900 50  0001 C CNN "Mouser Part Number"
-	1    5500 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4700 5650 5000 5650
-Wire Wire Line
-	4700 5900 5250 5900
-$Comp
-L Device:R R10
-U 1 1 625AF372
-P 5000 6150
-F 0 "R10" V 4793 6150 50  0000 C CNN
-F 1 "12K" V 4884 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 6150 50  0001 C CNN
-F 3 "~" H 5000 6150 50  0001 C CNN
-F 4 "603-AC0603JR-0712KL" V 5000 6150 50  0001 C CNN "Mouser Part Number"
-	1    5000 6150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 625B3D02
-P 5250 6150
-F 0 "R11" V 5043 6150 50  0000 C CNN
-F 1 "12K" V 5134 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 6150 50  0001 C CNN
-F 3 "~" H 5250 6150 50  0001 C CNN
-F 4 "603-AC0603JR-0712KL" V 5250 6150 50  0001 C CNN "Mouser Part Number"
-	1    5250 6150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5000 6000 5000 5650
-Connection ~ 5000 5650
-Wire Wire Line
-	5000 5650 5350 5650
-Wire Wire Line
-	5250 6000 5250 5900
-Connection ~ 5250 5900
-Wire Wire Line
-	5250 5900 5350 5900
-Wire Wire Line
-	5000 6300 5250 6300
-$Comp
-L power:GND #PWR022
-U 1 1 625BF062
-P 5250 6500
-F 0 "#PWR022" H 5250 6250 50  0001 C CNN
-F 1 "GND" H 5255 6327 50  0000 C CNN
-F 2 "" H 5250 6500 50  0001 C CNN
-F 3 "" H 5250 6500 50  0001 C CNN
-	1    5250 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 6500 5250 6300
-Connection ~ 5250 6300
-Text Label 5650 5900 0    50   ~ 0
-MIC_Left
-Text Label 5650 5650 0    50   ~ 0
-MIC_Right
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 6261E09C
@@ -540,166 +153,41 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 6254E63A
-P 3650 3950
-F 0 "J5" H 3758 4131 50  0000 C CNN
-F 1 "Speaker" H 3758 4040 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 3950 50  0001 C CNN
-F 3 "~" H 3650 3950 50  0001 C CNN
-	1    3650 3950
+P 7200 3500
+F 0 "J5" H 7308 3681 50  0000 C CNN
+F 1 "Speaker" H 7308 3590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7200 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 6254EECA
-P 4450 4850
-F 0 "J6" H 4558 5031 50  0000 C CNN
-F 1 "Microphone" H 4558 4940 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 4850 50  0001 C CNN
-F 3 "~" H 4450 4850 50  0001 C CNN
-	1    4450 4850
+P 7300 3950
+F 0 "J6" H 7408 4131 50  0000 C CNN
+F 1 "Microphone" H 7408 4040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7300 3950 50  0001 C CNN
+F 3 "~" H 7300 3950 50  0001 C CNN
+	1    7300 3950
 	1    0    0    -1  
 $EndComp
-Text Label 3850 3950 0    50   ~ 0
+Text Label 7400 3500 0    50   ~ 0
 SpeakerA
-Text Label 3850 4050 0    50   ~ 0
+Text Label 7400 3600 0    50   ~ 0
 SpeakerB
-Text Label 4650 4850 0    50   ~ 0
+Text Label 7500 3950 0    50   ~ 0
 MicrophoneA
-Text Label 4650 4950 0    50   ~ 0
+Text Label 7500 4050 0    50   ~ 0
 MicrophoneB
-$Comp
-L MAX98357AETE+T:MAX98357AETE+T U1
-U 1 1 62561989
-P 2250 2700
-F 0 "U1" H 2950 2950 50  0000 L CNN
-F 1 "MAX98357AETE+T" H 2800 2800 50  0000 L CNN
-F 2 "QFN50P300X300X80-17N" H 3700 3500 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX98357A-MAX98357B.pdf" H 3700 3400 50  0001 L CNN
-F 4 "Audio Amplifiers Digital Input Class D Amplifier" H 3700 3300 50  0001 L CNN "Description"
-F 5 "0.8" H 3700 3200 50  0001 L CNN "Height"
-F 6 "700-MAX98357AETE+T" H 3700 3100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX98357AETE%2bT?qs=AAveGqk956HhNpoJjF5x2g%3D%3D" H 3700 3000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Maxim Integrated" H 3700 2900 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAX98357AETE+T" H 3700 2800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 1100 2300 1100
 Wire Wire Line
 	2300 1100 2600 1100
-$Comp
-L MAX98357AETE+T:MAX98357AETE+T U3
-U 1 1 62579E8B
-P 4450 2700
-F 0 "U3" H 5150 2950 50  0000 L CNN
-F 1 "MAX98357AETE+T" H 5000 2800 50  0000 L CNN
-F 2 "QFN50P300X300X80-17N" H 5900 3500 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX98357A-MAX98357B.pdf" H 5900 3400 50  0001 L CNN
-F 4 "Audio Amplifiers Digital Input Class D Amplifier" H 5900 3300 50  0001 L CNN "Description"
-F 5 "0.8" H 5900 3200 50  0001 L CNN "Height"
-F 6 "700-MAX98357AETE+T" H 5900 3100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX98357AETE%2bT?qs=AAveGqk956HhNpoJjF5x2g%3D%3D" H 5900 3000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Maxim Integrated" H 5900 2900 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAX98357AETE+T" H 5900 2800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4450 2700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 850  2100
-Text Label 1100 2200 2    50   ~ 0
+Text Label 1100 2200 0    50   ~ 0
 DAP4_DIN
 Wire Wire Line
 	1200 2400 1200 4500
-Wire Wire Line
-	1200 4500 2600 4500
-Text Label 2250 2700 2    50   ~ 0
-DAP4_DIN
-Text Label 4450 2700 2    50   ~ 0
-DAP4_DIN
-Text Label 3150 1700 1    50   ~ 0
-DAP4_FS
-Text Label 5350 1700 1    50   ~ 0
-DAP4_FS
-Text Label 2950 1700 1    50   ~ 0
-DAP4_SCLK
-Text Label 5150 1700 1    50   ~ 0
-DAP4_SCLK
-NoConn ~ 3250 1700
-NoConn ~ 5450 1700
-NoConn ~ 6050 2700
-NoConn ~ 5150 3700
-NoConn ~ 5050 3700
-NoConn ~ 3850 2700
-NoConn ~ 2950 3700
-NoConn ~ 2850 3700
-$Comp
-L power:GND #PWR0101
-U 1 1 6259EC85
-P 4950 1550
-F 0 "#PWR0101" H 4950 1300 50  0001 C CNN
-F 1 "GND" H 4955 1377 50  0000 C CNN
-F 2 "" H 4950 1550 50  0001 C CNN
-F 3 "" H 4950 1550 50  0001 C CNN
-	1    4950 1550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4950 1550 4950 1700
-Wire Wire Line
-	4950 1700 5050 1700
-$Comp
-L power:GND #PWR0102
-U 1 1 625A0031
-P 6150 2800
-F 0 "#PWR0102" H 6150 2550 50  0001 C CNN
-F 1 "GND" V 6155 2672 50  0000 R CNN
-F 2 "" H 6150 2800 50  0001 C CNN
-F 3 "" H 6150 2800 50  0001 C CNN
-	1    6150 2800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6150 2800 6050 2800
-$Comp
-L power:GND #PWR0103
-U 1 1 625A21C4
-P 4350 2900
-F 0 "#PWR0103" H 4350 2650 50  0001 C CNN
-F 1 "GND" V 4355 2772 50  0000 R CNN
-F 2 "" H 4350 2900 50  0001 C CNN
-F 3 "" H 4350 2900 50  0001 C CNN
-	1    4350 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 2900 4450 2900
-$Comp
-L power:GND #PWR0104
-U 1 1 625A3900
-P 2750 1500
-F 0 "#PWR0104" H 2750 1250 50  0001 C CNN
-F 1 "GND" H 2755 1327 50  0000 C CNN
-F 2 "" H 2750 1500 50  0001 C CNN
-F 3 "" H 2750 1500 50  0001 C CNN
-	1    2750 1500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4350 2800 4350 2900
-Connection ~ 4350 2900
-$Comp
-L power:GND #PWR0105
-U 1 1 625A528F
-P 2150 2900
-F 0 "#PWR0105" H 2150 2650 50  0001 C CNN
-F 1 "GND" V 2155 2772 50  0000 R CNN
-F 2 "" H 2150 2900 50  0001 C CNN
-F 3 "" H 2150 2900 50  0001 C CNN
-	1    2150 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 2900 2150 2900
 $Comp
 L Device:CP1 C1
 U 1 1 625A6F36
@@ -714,7 +202,7 @@ F 4 "647-F981A106MMA" H 2600 1250 50  0001 C CNN "Mouser Part Number"
 $EndComp
 Connection ~ 2600 1100
 Wire Wire Line
-	2600 1100 3700 1100
+	2600 1100 3250 1100
 Wire Wire Line
 	2600 1400 2300 1400
 Connection ~ 2300 1400
@@ -737,151 +225,365 @@ Wire Wire Line
 	3700 1400 3950 1400
 Connection ~ 3950 1400
 Wire Wire Line
-	2850 1600 2850 1700
-Wire Wire Line
-	2750 1600 2750 1500
-Wire Wire Line
-	2750 1600 2850 1600
+	1200 4500 2950 4500
 $Comp
-L power:+3.3V #PWR0106
-U 1 1 625AD839
-P 5350 3850
-F 0 "#PWR0106" H 5350 3700 50  0001 C CNN
-F 1 "+3.3V" H 5365 4023 50  0000 C CNN
-F 2 "" H 5350 3850 50  0001 C CNN
-F 3 "" H 5350 3850 50  0001 C CNN
-	1    5350 3850
-	-1   0    0    1   
+L ADAU1361BCPZ:ADAU1361BCPZ U?
+U 1 1 6264004F
+P 4100 2700
+F 0 "U?" H 4900 2050 50  0000 L CNN
+F 1 "ADAU1361BCPZ" H 4800 2200 50  0000 L CNN
+F 2 "QFN50P500X500X100-33N-D" H 5750 3500 50  0001 L CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1361.pdf" H 5750 3400 50  0001 L CNN
+F 4 "ADAU1361BCPZ, Audio Codec 2 (ADC), 2 (DAC)-channel 24bit- 96ksps Serial-I2C, Serial-SPI 32-Pin LFCSP EP" H 5750 3300 50  0001 L CNN "Description"
+F 5 "1" H 5750 3200 50  0001 L CNN "Height"
+F 6 "" H 5750 3100 50  0001 L CNN "Mouser2 Part Number"
+F 7 "" H 5750 3000 50  0001 L CNN "Mouser2 Price/Stock"
+F 8 "Analog Devices" H 5750 2900 50  0001 L CNN "Manufacturer_Name"
+F 9 "ADAU1361BCPZ" H 5750 2800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4100 2700
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 3850 5350 3700
-Wire Wire Line
-	5350 3700 5250 3700
-Connection ~ 5350 3700
-Wire Wire Line
-	3150 3700 3050 3700
+Text Label 1200 2400 0    50   ~ 0
+Audio_MCLK
+Text Label 1100 2550 0    50   ~ 0
+DAP4_DOUT
+Text HLabel 1100 2700 0    50   BiDi ~ 0
+SDA
+Text HLabel 1100 2850 0    50   Input ~ 0
+SCL
+Text Label 1100 2700 0    50   ~ 0
+SDA
+Text Label 1100 2850 0    50   ~ 0
+SCL
+Text Label 5000 1700 1    50   ~ 0
+DAP4_FS
+Text Label 5100 1700 1    50   ~ 0
+DAP4_SCLK
+Text Label 3350 2800 2    50   ~ 0
+Audio_MCLK
+Text Label 5200 1700 1    50   ~ 0
+DAP4_DIN
+Text Label 5300 1700 1    50   ~ 0
+DAP4_DOUT
+Text Label 4800 1700 1    50   ~ 0
+SDA
+Text Label 4700 1700 1    50   ~ 0
+SCL
 $Comp
-L power:+3.3V #PWR0107
-U 1 1 625B5985
-P 3050 3800
-F 0 "#PWR0107" H 3050 3650 50  0001 C CNN
-F 1 "+3.3V" H 3065 3973 50  0000 C CNN
-F 2 "" H 3050 3800 50  0001 C CNN
-F 3 "" H 3050 3800 50  0001 C CNN
-	1    3050 3800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3050 3800 3050 3700
-Connection ~ 3050 3700
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 625B7A19
-P 2100 2800
-F 0 "#PWR0108" H 2100 2650 50  0001 C CNN
-F 1 "+3.3V" V 2115 2928 50  0000 L CNN
-F 2 "" H 2100 2800 50  0001 C CNN
-F 3 "" H 2100 2800 50  0001 C CNN
-	1    2100 2800
+L power:+3.3V #PWR?
+U 1 1 6264ED76
+P 4100 3400
+F 0 "#PWR?" H 4100 3250 50  0001 C CNN
+F 1 "+3.3V" H 4115 3573 50  0000 C CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2250 2800 2100 2800
 $Comp
-L power:+3.3V #PWR0109
-U 1 1 625B9DC9
-P 4300 2750
-F 0 "#PWR0109" H 4300 2600 50  0001 C CNN
-F 1 "+3.3V" V 4315 2878 50  0000 L CNN
-F 2 "" H 4300 2750 50  0001 C CNN
-F 3 "" H 4300 2750 50  0001 C CNN
-	1    4300 2750
+L power:+3.3V #PWR?
+U 1 1 6264F645
+P 4100 2700
+F 0 "#PWR?" H 4100 2550 50  0001 C CNN
+F 1 "+3.3V" H 4115 2873 50  0000 C CNN
+F 2 "" H 4100 2700 50  0001 C CNN
+F 3 "" H 4100 2700 50  0001 C CNN
+	1    4100 2700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3850 2800 4350 2800
-Wire Wire Line
-	4450 2800 4450 2750
-Wire Wire Line
-	4450 2750 4300 2750
 $Comp
-L power:GND #PWR0110
-U 1 1 625BE1DC
-P 3000 1500
-F 0 "#PWR0110" H 3000 1250 50  0001 C CNN
-F 1 "GND" H 3005 1327 50  0000 C CNN
-F 2 "" H 3000 1500 50  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-	1    3000 1500
-	-1   0    0    1   
+L power:+3.3V #PWR?
+U 1 1 62651618
+P 5900 2800
+F 0 "#PWR?" H 5900 2650 50  0001 C CNN
+F 1 "+3.3V" H 5915 2973 50  0000 C CNN
+F 2 "" H 5900 2800 50  0001 C CNN
+F 3 "" H 5900 2800 50  0001 C CNN
+	1    5900 2800
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3050 1700 3050 1500
-Wire Wire Line
-	3050 1500 3000 1500
 $Comp
-L power:GND #PWR0111
-U 1 1 625C063C
-P 5250 1550
-F 0 "#PWR0111" H 5250 1300 50  0001 C CNN
-F 1 "GND" H 5255 1377 50  0000 C CNN
-F 2 "" H 5250 1550 50  0001 C CNN
-F 3 "" H 5250 1550 50  0001 C CNN
-	1    5250 1550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5250 1550 5250 1700
-$Comp
-L Device:R R2
-U 1 1 625C2DB9
-P 4300 3250
-F 0 "R2" H 4370 3296 50  0000 L CNN
-F 1 "634K" H 4370 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4230 3250 50  0001 C CNN
-F 3 "~" H 4300 3250 50  0001 C CNN
-F 4 "603-RT0603FRE07634KL" H 4300 3250 50  0001 C CNN "Mouser Part Number"
-	1    4300 3250
+L power:GND #PWR?
+U 1 1 626538FD
+P 4600 4100
+F 0 "#PWR?" H 4600 3850 50  0001 C CNN
+F 1 "GND" H 4605 3927 50  0000 C CNN
+F 2 "" H 4600 4100 50  0001 C CNN
+F 3 "" H 4600 4100 50  0001 C CNN
+	1    4600 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 625C3656
-P 2150 3250
-F 0 "R1" H 2220 3296 50  0000 L CNN
-F 1 "634K" H 2220 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2080 3250 50  0001 C CNN
-F 3 "~" H 2150 3250 50  0001 C CNN
-F 4 "603-RT0603FRE07634KL" H 2150 3250 50  0001 C CNN "Mouser Part Number"
-	1    2150 3250
+L power:GND #PWR?
+U 1 1 62653E3D
+P 4100 2900
+F 0 "#PWR?" H 4100 2650 50  0001 C CNN
+F 1 "GND" H 4105 2727 50  0000 C CNN
+F 2 "" H 4100 2900 50  0001 C CNN
+F 3 "" H 4100 2900 50  0001 C CNN
+	1    4100 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6265425E
+P 5900 2900
+F 0 "#PWR?" H 5900 2650 50  0001 C CNN
+F 1 "GND" H 5905 2727 50  0000 C CNN
+F 2 "" H 5900 2900 50  0001 C CNN
+F 3 "" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 626567BA
+P 5400 1700
+F 0 "#PWR?" H 5400 1450 50  0001 C CNN
+F 1 "GND" H 5405 1527 50  0000 C CNN
+F 2 "" H 5400 1700 50  0001 C CNN
+F 3 "" H 5400 1700 50  0001 C CNN
+	1    5400 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62656CEB
+P 4900 1700
+F 0 "#PWR?" H 4900 1450 50  0001 C CNN
+F 1 "GND" H 4905 1527 50  0000 C CNN
+F 2 "" H 4900 1700 50  0001 C CNN
+F 3 "" H 4900 1700 50  0001 C CNN
+	1    4900 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6265703B
+P 4600 1700
+F 0 "#PWR?" H 4600 1450 50  0001 C CNN
+F 1 "GND" H 4605 1527 50  0000 C CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 626588BA
+P 3450 1250
+F 0 "C?" H 3565 1296 50  0000 L CNN
+F 1 ".1uf" H 3565 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3488 1100 50  0001 C CNN
+F 3 "~" H 3450 1250 50  0001 C CNN
+F 4 "80-C603C104K5RAC3121" H 3450 1250 50  0001 C CNN "Mouser Part Number"
+	1    3450 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 1100
+Wire Wire Line
+	3450 1100 3700 1100
+Wire Wire Line
+	3450 1400 3700 1400
+Connection ~ 3700 1400
+$Comp
+L Device:L L?
+U 1 1 62659B19
+P 3250 1250
+F 0 "L?" H 3303 1296 50  0000 L CNN
+F 1 "1.2nH" H 3303 1205 50  0000 L CNN
+F 2 "" H 3250 1250 50  0001 C CNN
+F 3 "~" H 3250 1250 50  0001 C CNN
+	1    3250 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1100
+Wire Wire Line
+	3250 1100 3450 1100
+$Comp
+L Device:C C?
+U 1 1 6265A2F3
+P 3250 1650
+F 0 "C?" H 3365 1696 50  0000 L CNN
+F 1 "9.1pF" H 3365 1605 50  0000 L CNN
+F 2 "" H 3288 1500 50  0001 C CNN
+F 3 "~" H 3250 1650 50  0001 C CNN
+	1    3250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6265A5A3
+P 3250 1900
+F 0 "#PWR?" H 3250 1650 50  0001 C CNN
+F 1 "GND" H 3255 1727 50  0000 C CNN
+F 2 "" H 3250 1900 50  0001 C CNN
+F 3 "" H 3250 1900 50  0001 C CNN
+	1    3250 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 3000 4300 3000
+	3250 1400 3250 1500
 Wire Wire Line
-	4300 3000 4300 3100
-Wire Wire Line
-	2250 3000 2150 3000
-Wire Wire Line
-	2150 3000 2150 3100
-Text HLabel 1900 3500 0    50   Input ~ 0
-SpeakerEnable
-Text HLabel 4100 3650 0    50   Input ~ 0
-HeadsetEnable
-Wire Wire Line
-	4300 3400 4300 3650
-Wire Wire Line
-	4300 3650 4100 3650
-Wire Wire Line
-	2150 3400 2150 3500
-Wire Wire Line
-	2150 3500 1900 3500
-Text Label 3850 2900 0    50   ~ 0
-SpeakerA
-Text Label 3850 3000 0    50   ~ 0
-SpeakerB
-Text Label 6050 2900 0    50   ~ 0
+	3250 1800 3250 1900
+Text Label 5900 3300 0    50   ~ 0
 SPKR_A(Red)
-Text Label 6050 3000 0    50   ~ 0
+Text Label 5900 3400 0    50   ~ 0
 SPKR_B(Green)
+Text Label 5200 4100 3    50   ~ 0
+SpeakerA
+Text Label 5300 4100 3    50   ~ 0
+SpeakerB
+$Comp
+L Device:C C?
+U 1 1 6265E3DD
+P 4450 4700
+F 0 "C?" H 4565 4746 50  0000 L CNN
+F 1 "10uf" H 4565 4655 50  0000 L CNN
+F 2 "" H 4488 4550 50  0001 C CNN
+F 3 "~" H 4450 4700 50  0001 C CNN
+	1    4450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62661448
+P 4800 4700
+F 0 "C?" H 4915 4746 50  0000 L CNN
+F 1 "10uf" H 4915 4655 50  0000 L CNN
+F 2 "" H 4838 4550 50  0001 C CNN
+F 3 "~" H 4800 4700 50  0001 C CNN
+	1    4800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62661822
+P 5100 4700
+F 0 "C?" H 5215 4746 50  0000 L CNN
+F 1 "10uf" H 5215 4655 50  0000 L CNN
+F 2 "" H 5138 4550 50  0001 C CNN
+F 3 "~" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62661B08
+P 5450 4700
+F 0 "C?" H 5565 4746 50  0000 L CNN
+F 1 "10uf" H 5565 4655 50  0000 L CNN
+F 2 "" H 5488 4550 50  0001 C CNN
+F 3 "~" H 5450 4700 50  0001 C CNN
+	1    5450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4100 4700 4400
+Wire Wire Line
+	4700 4400 4450 4400
+Wire Wire Line
+	4450 4400 4450 4550
+Wire Wire Line
+	4800 4100 4800 4550
+Wire Wire Line
+	4900 4450 5100 4450
+Wire Wire Line
+	5100 4450 5100 4550
+Wire Wire Line
+	4900 4100 4900 4450
+Wire Wire Line
+	5000 4100 5000 4350
+Wire Wire Line
+	5000 4350 5450 4350
+Wire Wire Line
+	5450 4350 5450 4550
+Text Label 4450 4850 3    50   ~ 0
+MIC_A(Black)
+Text Label 4800 4850 3    50   ~ 0
+MIC_B(Yellow)
+Text Label 5100 4850 3    50   ~ 0
+MicrophoneA
+Text Label 5450 4850 3    50   ~ 0
+MicrophoneB
+$Comp
+L power:GND #PWR?
+U 1 1 62664E99
+P 4200 4850
+F 0 "#PWR?" H 4200 4600 50  0001 C CNN
+F 1 "GND" H 4205 4677 50  0000 C CNN
+F 2 "" H 4200 4850 50  0001 C CNN
+F 3 "" H 4200 4850 50  0001 C CNN
+	1    4200 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62665316
+P 5250 4850
+F 0 "#PWR?" H 5250 4600 50  0001 C CNN
+F 1 "GND" H 5255 4677 50  0000 C CNN
+F 2 "" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4850 4450 4850
+Wire Wire Line
+	5250 4850 5100 4850
+$Comp
+L Device:R R?
+U 1 1 62666747
+P 4900 5200
+F 0 "R?" H 4970 5246 50  0000 L CNN
+F 1 "2K" H 4970 5155 50  0000 L CNN
+F 2 "" V 4830 5200 50  0001 C CNN
+F 3 "~" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 626668F2
+P 5600 5200
+F 0 "R?" H 5670 5246 50  0000 L CNN
+F 1 "2K" H 5670 5155 50  0000 L CNN
+F 2 "" V 5530 5200 50  0001 C CNN
+F 3 "~" H 5600 5200 50  0001 C CNN
+	1    5600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5050 4900 4850
+Wire Wire Line
+	4900 4850 4800 4850
+Wire Wire Line
+	5600 4850 5450 4850
+Wire Wire Line
+	5600 4850 5600 5050
+Wire Wire Line
+	4900 5350 5600 5350
+Wire Wire Line
+	4100 3100 3600 3100
+Wire Wire Line
+	3600 3100 3600 5350
+Wire Wire Line
+	3600 5350 4900 5350
+Connection ~ 4900 5350
+$Comp
+L Device:R R?
+U 1 1 6266D0AE
+P 3750 2800
+F 0 "R?" V 3543 2800 50  0000 C CNN
+F 1 "49.9" V 3634 2800 50  0000 C CNN
+F 2 "" V 3680 2800 50  0001 C CNN
+F 3 "~" H 3750 2800 50  0001 C CNN
+	1    3750 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2800 3900 2800
+Wire Wire Line
+	3600 2800 3350 2800
 $EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADAU1361BCPZ
+D ADAU1361BCPZ, Audio Codec 2 (ADC), 2 (DAC)-channel 24bit- 96ksps Serial-I2C, Serial-SPI 32-Pin LFCSP EP
+K
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1361.pdf
+$ENDCMP
+#
+#End Doc Library
